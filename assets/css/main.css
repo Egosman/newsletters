@@ -1,0 +1,132 @@
+/*Paleta:
+  --middle-green: #4b7f52ff;
+  --mantis: #7dd181ff;
+  --magic-mint: #96e8bcff;
+  --magic-mint-2: #b6f9c9ff;
+  --aero-blue: #c9ffe2ff;
+  --rosa:#d500f9;
+*/
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: underline;
+  color: #d500f9;
+}
+a:hover{
+  0.8;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.container{
+  background: #00b09b;
+  background: -webkit-linear-gradient(left, #96c93d, #00b09b);
+  background: -o-linear-gradient(left, #96c93d, #00b09b);
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,16), 0 3px 6px rgba(0,0,0,23);
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+  overflow: scroll;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #7dd181ff;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,16), 0 3px 6px rgba(0,0,0,23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 200;
+}
+
+.fa-star{
+  color: #ffc400;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){ background-color: #c9ffe2ff;}
+
+.title-item{
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #96e8bcff;
+  padding: 1em;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+.position{
+  background-color: #96e8bcff;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.address{
+  font-weight: bold;
+  color: #4b7f52ff;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+@media (min-height:550px) {
+  .content{
+    height: 500px;
+  }
+}
+
+@media (max-width:600px) {
+  .content{
+    padding: 1em;
+  }
+  td{
+    display: block;
+    width: 100%;
+  }
+  td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4b7f52ff;
+  }
+  th{
+    display: none;
+  }
+}
